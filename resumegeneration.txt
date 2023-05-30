@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJSSxtjalXniQNTMecqxCH4OBjfvXOn5a428roB7qeD6GjI9-nR-5LIa6RFI9Iew9R7U&usqp=CAU");
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-attachment:fixed;
+}
+h1 {
+font-size=30px;
+color=blue;
+}
+</style>
+<title>Automatic resume generation</title>
+</head>
+<body>
+<h1>Enter the following details</h1>
+<from action="resume.php" method="get>
+<label for="fname">First Name:</label><br>
+<input type="text" for="fname" name="fname"><br>
+<label for="lname">Last Name:</label><br>
+<input type="text" for="lname" name="lname"><br>
+<label for="Age">Age:</label><br>
+<input type="text" for="Age" name="Age"><br>
+<label for="Gender">Gender:</label><br>
+<input type="radio" id="Male" for="Gender" name="Gender">
+<label for="Male">Male</label><br>
+<input type="radio" id="Female" for="Gender" name="Gender">
+<label for="Female">Female</label><br>
+<input type="radio" id="Other" for="Gender" name="Gender">
+<label for="Other">Other</label><br>
+<label for="address">Enter your address:</label><br>
+<textarea name="address" rows="3" col="50"></textarea><br>
+<label for="Country">Nationality</label><br>
+<select id="Country" name="Country">
+<option value="India">India</option>
+<option value="Japan">Japan</option>
+<option value="USA">USA</option>
+<option value="South Korea">South Korea</option>
+</select>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
